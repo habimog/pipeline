@@ -1,4 +1,4 @@
-pull from stage
+ from stage
 
 
 
