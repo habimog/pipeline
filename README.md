@@ -1,3 +1,3 @@
 #  jenkins test pipeline
 
-test 5 from v1.0.7
+test 6 from v1.0.7
