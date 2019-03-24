@@ -1,3 +1,3 @@
 #  jenkins test pipeline
 
-test 48 from v1.0.7
+test 49 from v1.0.7
