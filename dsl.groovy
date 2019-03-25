@@ -38,7 +38,7 @@ pipelineJob("testing-tagging") {
     }
 }"""		}
 	}
-	disabled(true)
+	disabled(false)
 	configure {
 		it / 'properties' / 'com.coravy.hudson.plugins.github.GithubProjectProperty' {
 			'projectUrl'('https://github.com/habimog/pipeline.git/')
