@@ -1,4 +1,4 @@
-pipelineJob("testing-tagging") {
+pipelineJob("testing-jenkins-as-code") {
 	description()
 	keepDependencies(false)
 	definition {
