@@ -1,3 +1,3 @@
 #  jenkins test pipeline
 
-test 76 from develop branch
+test 77 from develop branch
