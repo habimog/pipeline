@@ -1,3 +1,3 @@
 #  jenkins test pipeline
 
-test 92 from master branch
+test 93 from master branch
