@@ -16,12 +16,12 @@ pipeline {
             steps {
                 echo 'Deploying to Test ...'
             }
-        }
+        }/*
        stage('Deploy Prod') {
            when { tag "prod-*" }
             steps {
                 echo 'Deploying to Prod ...'
             }
-        }
+        }*/
     }
 }
