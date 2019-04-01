@@ -1,43 +1,16 @@
 pipeline {
-
     agent any
-
     stages {
-
-        stage('Deploy to Dev') {
-
+        stage('Checkout') {
             steps {
-
-                echo 'Deploying to Dev ...'
-
+                checkout([$class: 'GitSCM', branches: [[name: '**']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'BYMIKT_GITHUB', url: 'https://github.com/habimog/pipeline.git']]])  
             }
-
         }
-
         stage('Deploy Test') {
-
-            when { tag "test-*" }
-
             steps {
-
                 echo 'Deploying to Test ...'
-
+                deleteDir()
             }
-
         }
-
-       stage('Deploy Prod') {
-
-           when { tag "prod-*" }
-
-            steps {
-
-                echo 'Deploying to Prod ...'
-
-            }
-
-        }
-
     }
-
 }
