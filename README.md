@@ -1,3 +1,3 @@
 #  jenkins test pipeline
 
-test 15 from master branch
+test 22 from master branch
