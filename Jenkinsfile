@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Deploy to Dev') {
             steps {
+                checkout([$class: 'GitSCM', branches: [[name: '**']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'BYMIKT_GITHUB', url: 'https://github.com/habimog/pipeline.git']]])
                 echo 'Deploying to Dev ...'
             }
         }
